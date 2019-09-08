@@ -7,7 +7,7 @@
 |___|___|___|_|_|_|_|__,|_|  |_| |___|  |___|_|_|_|
 
 ```
-## Install ##
+## Compile ##
 
 ```sh
 $ gitclone https://github.com/stackiller/decimalbin.github
