@@ -1,5 +1,6 @@
 #include <stdio.h> // standard
-#include <stdlib.h> // for atoi();
+#include <stdlib.h> // for atoi
+#include <string.h> // for strcmp
 
 // binary prototype
 int bin(int b);
@@ -17,11 +18,25 @@ bin(int b) {
 
 int
 main(int argc, char **argv) {
-  fprintf(stdout, "binary-> ");
+  if(argv[1] == NULL)
+    return 1;
+ 
+  // if input is text
+  if((strcmp(argv[1], "--text") == 0)) {
+    for(int i=2; i < argc; i++) {
+      for(int j=0; j < strlen(argv[i]); j++) {
+        putchar(argv[i][j]);
+      } putchar(32);
+    } putchar(10);
+    return 0;
+  }
+
   // convert each decimal
-  for(int i=1; i < argc; i++) {
-    bin(atoi(argv[i]));
-    putchar(32);
-  } putchar(10);
+  if((strcmp(argv[1], "--number") == 0)) {
+    for(int i=2; i < argc; i++) {
+      bin(atoi(argv[i]));
+      putchar(32);
+    } putchar(10);
+  } else { return 1; }
   return 0;
 }
