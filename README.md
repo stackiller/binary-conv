@@ -1,26 +1,36 @@
-# decimalbin #
+# binconv
 
-```
-   _         _           _    _          _   _     
- _| |___ ___|_|_____ ___| |  | |_ ___   | |_|_|___ 
-| . | -_|  _| |     | .'| |  |  _| . |  | . | |   |
-|___|___|___|_|_|_|_|__,|_|  |_| |___|  |___|_|_|_|
+## Simples conversor de texto e números para binário.
 
+Para usar siga os passos abaixo:
+ 
+## Compile
+ 
+```sh
+cc decimalbin.c -o decimalbin -Wall
 ```
-## Compile ##
+ 
+## Como usar:
+ 
+### Para arquivos de texto:
+Especifique a flag: --text
 
 ```sh
-$ gitclone https://github.com/stackiller/decimalbin.github
-$ cd decimalbin && cc decimalbin.c -o decimalbin -Wall
+$ declare -a text=$(cat text.example);`
+$./binconv --text $text;
 ```
 
-## How to use ##
+ou simplesmente
+
 ```sh
-$ ./decimalbin <comma-separated numbers>
+$ ./binconv --text $(cat text.example);
 ```
 
-## Example ##
+### Para números
+
+Especifique a flag: --number
 ```sh
-$ ./decimalbin 101 97 3301
-binary-> 1100101 1100001 110011100101 
+$ ./binconv --number 1 2 3 10 2
 ```
+
+Bom proveito .__."
