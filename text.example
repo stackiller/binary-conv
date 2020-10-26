@@ -1,0 +1,11 @@
+This breakpoint is right before the stack frame for the test_function() call 
+is created. This means the bottom of this new stack frame is at the current 
+value of ESP, 0xbffff7f0. The next breakpoint is right after the procedure 
+prologue for test_function(), so continuing will build the stack frame. The 
+output below shows similar information at the second breakpoint. The local 
+variables (flag and buffer) are referenced relative to the frame pointer (EBP).This breakpoint is right before the stack frame for the test_function() call 
+is created. This means the bottom of this new stack frame is at the current 
+value of ESP, 0xbffff7f0. The next breakpoint is right after the procedure 
+prologue for test_functon(), so continuing will build the stack frame. The 
+output below shows similar information at the second breakpoint. The local 
+variables (flag and buffer) are referenced relative to the frame pointer (EBP).i
