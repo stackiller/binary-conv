@@ -7,7 +7,7 @@ Para usar siga os passos abaixo:
 ## Compile
  
 ```sh
-cc decimalbin.c -o decimalbin -Wall
+$ cc binconv.c -o binconv -Wall
 ```
  
 ## Como usar:
@@ -16,14 +16,14 @@ cc decimalbin.c -o decimalbin -Wall
 Especifique a flag: --text
 
 ```sh
-$ declare -a text=$(cat text.example);`
-$./binconv --text $text;
+$ declare -a text=$(cat text.example)
+$ ./binconv --text $text
 ```
 
 ou simplesmente
 
 ```sh
-$ ./binconv --text $(cat text.example);
+$ ./binconv --text $(cat text.example)
 ```
 
 ### Para números
