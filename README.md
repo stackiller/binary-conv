@@ -1,5 +1,3 @@
-# binconv
-
 ## Simples conversor de texto e números para binário.
 
 Para usar siga os passos abaixo:
