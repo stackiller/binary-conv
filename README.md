@@ -1,14 +1,13 @@
-## Simples conversor de texto e números para binário.
-
-Para usar siga os passos abaixo:
+ ## Conversor de texto e números para Binário.
  
-## Compile
+ Abaixo algumas instruções do modo de uso e compilação ..
  
+ ## compile 
 ```sh
 $ cc binconv.c -o binconv -Wall
 ```
  
-## Como usar:
+## como usar:
  
 ### Para arquivos de texto:
 Especifique a flag: --text
